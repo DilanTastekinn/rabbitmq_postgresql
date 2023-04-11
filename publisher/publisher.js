@@ -1,5 +1,5 @@
 const amqp = require('amqplib')
-const rabbitmqConnection = require('./rabbitmqConnection')
+const rabbitmqConnection = require('../connections/rabbitmqConnection')
 
 const KEY = "emailKuyrugu"
 module.exports = async(data) => {
