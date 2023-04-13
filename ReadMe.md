@@ -16,7 +16,7 @@ RABBİTMQ KURULUM
     
     8.adım: sudo systemctl start rabbitmq-server
     
-    9.adım: sudo systemctl enable rabbitmq-server(start olmazsa 10 ve 11.adım)
+    9.adım: sudo systemctl enable rabbitmq-server(start olmazsa 10 ve 11 ve 12.adım)
     
     10.adım: sudo systemctl disable rabbitmq-server
     
@@ -46,9 +46,9 @@ RABBİTMQ KURULUM
     
     23.adım: sudo systemctl restart rabbitmq-server
     
-    [http://localhost:15672/](http://localhost:15672/)
+    [http://localhost:15672/]
 
 *Rabbitmq mesaj kuyruğu sistemidir. Proje de basit bir şekilde post işlemi gerçekleştirdik bunun için localhost:5000/create adresine body'e email ekleyerek gönderdik.Publisher da hangi kuyruğa gönderileceği kriterler belirtilmiştir.Consumer da ise kuyruğa alınan veriler geliyor ve belli bir süre sonra siliniyor .Message queue ile veri kaybını önleme ve kullanıcıyı bekletmemek amaçlanmaktadır.*
 
 
-**2 terminal ile çalışıyoruz birisi node ./app.js 2.terminal ise node ./consumer.js** 
+**2 terminal ile çalışıyoruz birisi node ./app.js 2.terminal ise consumer a gir node ./consumer.js** 

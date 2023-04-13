@@ -5,7 +5,7 @@ const app =express();
 app.use(express.json());
 app.use(router);
 
-const publisher =require("./publisher")
+const publisher =require("./publisher/publisher")
 
 router.post("/create",async(req,res)=>{
     const {email}= req.body;
